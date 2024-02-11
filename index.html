@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script
+      src="https://kit.fontawesome.com/64d58efce2.js"
+      crossorigin="anonymous">
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>E-Collect Register/Login</title>
+</head>
+
+
+<body>
+  <div class="container">
+
+    <div class="forms-container">
+      
+      <div class="signin-signup">
+
+        <!-- Sign In -->
+        <form action="#" class="sign-in-form">
+          <h2 class="title">Sign In</h2>
+
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email">
+          </div>
+
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password">
+          </div>
+
+          <input type="submit" value="Submit" class="btn solid">          
+        </form>
+
+         <!-- Sign Up -->
+        <form action="#" class="sign-up-form">
+          <h2 class="title">Register</h2>
+
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username" required>
+          </div>
+
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="G-Cash Account Name" required>
+          </div>
+
+          <div class="input-field">
+            <i class="fas fa-user"></i>
+            <input type="number" placeholder="G-Cash Account Number" required>
+          </div>
+       
+          <div class="input-field">
+            <i class="fas fa-envelope"></i>
+            <input type="email" placeholder="Email" required>
+          </div>
+
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Password" required>
+          </div>
+
+          <div class="input-field">
+            <i class="fas fa-lock"></i>
+            <input type="password" placeholder="Confirm Password" required> 
+          </div>
+
+          <div class="image-field">     
+            <label for="gcash-qrcode" class="placeholder">Upload G-Cash QR Code Image</label>
+            <input type="file" id="gcash-qrcode" accept="image/*" required>
+          </div>
+
+          <input type="submit" class="btn" value="Submit">
+        </form>     
+
+      </div>
+      
+    </div>
+
+     <!-- Panel -->
+    <div class="panels-container">
+
+      <!-- Left Panel -->
+      <div class="panel left-panel">
+
+        <div class="content">
+          <h3>New Here?</h3>
+
+          <p>
+            Join us!
+          </p>
+
+          <button class="btn transparent" id="sign-up-btn">
+            Sign Up
+          </button>        
+        </div>
+
+        <img src="assets/images/E-Collect_LOGO.png" class="image" alt="e-collect_logo">
+
+      </div>
+
+      <!-- Right Panel -->
+      <div class="panel right-panel">
+
+        <div class="content">
+          <h3>Already a Member?</h3>
+
+          <p>
+            Log In Here!
+          </p>
+
+          <button class="btn transparent" id="sign-in-btn">
+            Sign In
+          </button>
+        </div>
+
+        <img src="assets/images/E-Collect_LOGO.png" class="image" alt="e-collect_logo">
+      
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
